@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+ <title>Add Member</title>
+</head>
+<body>
+ <h1>Add Member</h1>
+ <form method="POST">
+  <label for="name">Name:</label>
+  <input type="text" name="name" id="name" required>
+  
+  <label for="status">Membership Status:</label>
+  <select name="status" id="status" required>
+      <option value="active">Active</option>
+      <option value="inactive">Inactive</option>
+  </select>
+  
+  <label for="password">Password:</label>
+  <input type="password" name="password" id="password" required>
+  
+  <button type="submit">Add Member</button>
+</form>
+</body>
+</html>
